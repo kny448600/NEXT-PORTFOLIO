@@ -5,9 +5,8 @@ export default function Animation() {
     return (
     <Lottie
         Loop
-        Animationdata={lottiejson}
+        animationdata={lottiejson}
         play
-        style={{width: 150, height: 150}}
     />
     )
 }
