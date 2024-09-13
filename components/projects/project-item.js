@@ -38,13 +38,24 @@ export default function ProjectItem({data}) {
             sx={{height : 200}}
             image={imgSrc}
             title={title}
-        />
-        <CardContent>
-            <Typography gutterBottom variant='h5' component="div">
-                {title}
-            </Typography>
-            
-        </CardContent>
+            />
+            <CardContent>
+                <Typography gutterBottom variant='h5' component="div">
+                    {title}
+                </Typography>
+                <Typography variant='body1' sx={{color: 'text.secondary'}}>
+                    {workDay} 일
+                </Typography>
+                <Typography variant='body2' sx={{color: 'text.secondary'}}>
+                    {description} 
+                </Typography>
+                <Typography variant='body2' sx={{color: 'text.secondary'}}>
+                    {tags.map((aTag) => (<span key={aTag.id}>{aTag.name}</span>))} 
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <Butten size='small' onClock={() => {router.push(github)}}>Visit Github</Butten>
+            </CardActions>
         </Card>
     )
 }
