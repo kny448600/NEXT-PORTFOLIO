@@ -14,8 +14,8 @@ export default function Header() {
                 <div className={styles.navmenu}>
                     <ul className={styles.navlist}>
                         <li><Link href='/'>Home</Link></li>
-                        <li><Link href='/about-me'>Projects</Link></li>
-                        <li><Link href='/404'>Contact</Link></li>
+                        <li><Link href='/project'>Projects</Link></li>
+                        <li><Link href='https://open.kakao.com/o/saHxHxOg'>Contact</Link></li>
                     </ul>
                 </div>
             </nav>
