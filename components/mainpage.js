@@ -8,10 +8,10 @@ import { useRouter } from "next/router";
 export default function Mainpage() {
     const router = useRouter();
     const handleClick = () => {
-        router.push('/about-me');
+        router.push('/projects');
     }
     return (
-        <div>
+        <div className={styles.wrapper}>
                 <Grid container spacing={10}>
                     <Grid size={4}>
                         <div className={styles.introduce}>
